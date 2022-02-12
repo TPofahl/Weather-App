@@ -44,8 +44,8 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center bg-blue-300">
 
         <div className="flex flex-col justify-center text-2xl">Weather</div>
-        <div className="flex">
-          <input className="flex px-8 bg-red-50 border-t-4 rounded-lg mr-3" placeholder="Enter zip code" value={zipCode} onChange={handleChange}></input>
+        <div className="flex px-0">
+          <input className="flex sm:px-4 lg:px-8 bg-red-50 text-center border-t-4 rounded-lg mr-3" placeholder="Enter zip code" value={zipCode} onChange={handleChange}></input>
           <DataButton handleClick={handleButton}/>
         </div>
         <DisplayWeather weatherData={weatherData} error={error}/>
