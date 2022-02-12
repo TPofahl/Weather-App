@@ -20,39 +20,39 @@ export default function DisplayWeather({ weatherData, error }) {
               <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
                 <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.name}, {weatherData.sys.country}</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">City</dd>
+                  <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">City</dd>
                 </div>
                 <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.main.temp} F</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">Temp</dd>
+                  <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">Temp</dd>
                 </div>
                 <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.main.feels_like} F</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">Feels like</dd>
+                  <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">Feels like</dd>
                 </div>
                   <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.wind.speed} mph</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">Windspeed</dd>
+                  <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">Windspeed</dd>
               </div>
                   <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.main.humidity}%</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">Humidity</dd>
+                  <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">Humidity</dd>
               </div>
                   <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.weather[0].description}</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">{weatherData.weather[0].main}</dd>
+                  <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">{weatherData.weather[0].main}</dd>
               </div>
               <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
               <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.main.temp_min} F</dt>
-              <dd className="order-1 text-5xl font-extrabold text-indigo-600">High</dd>
+              <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">High</dd>
           </div>
               <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
               <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.main.temp_max} F</dt>
-              <dd className="order-1 text-5xl font-extrabold text-indigo-600">Low</dd>
+              <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">Low</dd>
           </div>
               <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
               <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">{weatherData.main.pressure}</dt>
-              <dd className="order-1 text-5xl font-extrabold text-indigo-600">Pressure</dd>
+              <dd className="order-1 sm:text-3xl text-5xl font-extrabold text-indigo-600">Pressure</dd>
           </div>
               </dl>
             </div>
