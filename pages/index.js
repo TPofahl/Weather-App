@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import DataButton from '../components/dataButton';
 import DisplayWeather from '../components/displayWeather';
+import ContactLinks from '../components/contactLinks';
 
 export default function Home() {
 
@@ -49,6 +50,9 @@ export default function Home() {
           <DataButton handleClick={handleButton}/>
         </div>
         <DisplayWeather weatherData={weatherData} error={error}/>
+        <div className='pt-4'>
+          <ContactLinks/>
+        </div>
       </main>
     </div>
   )
