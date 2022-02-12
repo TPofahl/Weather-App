@@ -1,5 +1,4 @@
 export default function DisplayWeather({ weatherData, error }) {
-  console.log("test", weatherData);
   if (weatherData === null) {return (<div>{error ? error : 'No weather data'}</div>)}
   return (
     <div className="bg-blue-500 pt-12 sm:pt-16 mt-6 rounded-xl shadow-2xl">

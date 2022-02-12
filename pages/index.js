@@ -21,7 +21,6 @@ export default function Home() {
         }
       })
       .catch(errorMessage => {
-        console.log(errorMessage);
         setError(errorMessage);
         setWeatherData(null);
       })
@@ -36,7 +35,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 dark:bg-gray-800">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>Weather App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -44,8 +43,8 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center bg-blue-300">
 
-        <div className="flex flex-col justify-center text-9xl">Weather App</div>
-        <div className="flex sm:grid-cols-2">
+        <div className="flex flex-col justify-center text-2xl">Weather</div>
+        <div className="flex">
           <input className="flex px-8 bg-red-50 border-t-4 rounded-lg mr-3" placeholder="Enter zip code" value={zipCode} onChange={handleChange}></input>
           <DataButton handleClick={handleButton}/>
         </div>
