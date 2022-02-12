@@ -1,18 +1,18 @@
 export default function DisplayWeather({ weatherData, error }) {
   if (weatherData === null) {return (<div>{error ? error : 'No weather data'}</div>)}
   return (
-    <div className="bg-blue-500 pt-12 sm:pt-16 mt-6 rounded-xl shadow-2xl">
+    <div className="bg-blue-500  px-2 pt-12 sm:pt-16 mt-6 rounded-xl shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Your Daily Forecast
           </h2>
           <p className="mt-3 text-xl text-gray-900 sm:mt-4">
-            Data provided by the OpenWeather API
+            Data provided by the OpenWeatherMap API
           </p>
         </div>
       </div>
-      <div className="mt-10 pb-12 bg-blue-700 sm:pb-16 rounded-xl">
+      <div className="mt-10 sm:py-16 pb-12 pt-12 bg-blue-700 rounded-xl">
         <div className="relative">
           <div className="absolute inset-0 h-1/2 bg-blue-900" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

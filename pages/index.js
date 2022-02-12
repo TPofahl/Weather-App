@@ -41,19 +41,19 @@ export default function Home() {
         <title>Weather App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 text-center bg-blue-300">
-
+      <header className="flex py-7 justify-center bg-blue-400 w-screen">
         <div className="flex flex-col justify-center text-2xl">Weather</div>
+      </header>
+      <main className="flex flex-col pt-8 items-center justify-center w-full flex-1 text-center bg-blue-300">
         <div className="flex px-0">
           <input className="flex sm:px-4 lg:px-8 bg-red-50 text-center border-t-4 rounded-lg mr-3" placeholder="Enter zip code" value={zipCode} onChange={handleChange}></input>
           <DataButton handleClick={handleButton}/>
         </div>
         <DisplayWeather weatherData={weatherData} error={error}/>
-        <div className='pt-4'>
-          <ContactLinks/>
-        </div>
       </main>
+      <footer className="w-full items-center justify-center py-10 bg-blue-400">
+        <ContactLinks/>
+      </footer>
     </div>
   )
 }
